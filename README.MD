@@ -18,7 +18,7 @@
 - Necessário ter o Docker instalado e configurado
 - No diretório da raiz do projeto, execute sudo docker-compose up -d (LINUX) ou docker-compose up -d (WINDOWS)
 
-# Tópicos comtemplados na API
+# Tópicos contemplados na API
 
 - Cadastro de funcionários
 - Listagem de funcionários
