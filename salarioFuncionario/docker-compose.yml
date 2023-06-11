@@ -1,0 +1,32 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: funcionarioDb
+    environment:
+      POSTGRES_DB: 'tb_funcionario'
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+    ports:
+      - '3310:5432'
+    volumes:
+      - './data/db:/data/db'
+  app:
+    image: 2.1.0/api-salario-funcionario
+    build:
+      context: .
+    container_name: funcionarioApp
+    depends_on:
+      - postgres
+    ports:
+      - '8080:8080'
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/tb_funcionario
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_JPA_HIBERNATE_DDL_AUTO:create
+volumes:
+  db:
+    driver: local
+
+

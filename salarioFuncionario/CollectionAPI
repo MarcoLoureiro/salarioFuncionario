@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CollectionFuncionarios",
+    "dateExported": "2023-06-09T06:01:24.779Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8f562178-2872-4b36-bc67-add70b60a19c",
+            "colId": "13ba9139-3460-4427-897d-8c5c07a089b2",
+            "containerId": "",
+            "name": "cadastrarFuncionario",
+            "url": "http://localhost:8080/api/funcionario",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-08T18:17:06.994Z",
+            "modified": "2023-06-09T01:19:02.425Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\":\"Marco\",\n  \"cpf\":\"00000000001\",\n  \"dataDeNascimento\":\"1997-05-28T00:00:00\",\n  \"telefone\":\"91984122827\",\n  \"endereco\":\"Rua Top\",\n  \"salario\":\"2000.00\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "28c505ac-4445-40e7-8da6-d8d039d06437",
+            "colId": "13ba9139-3460-4427-897d-8c5c07a089b2",
+            "containerId": "",
+            "name": "listarFuncionarios",
+            "url": "http://localhost:8080/api/funcionarios",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-08T18:27:36.351Z",
+            "modified": "2023-06-08T18:29:33.994Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "71207b5c-5290-4bdb-8866-94496ffb8daf",
+            "colId": "13ba9139-3460-4427-897d-8c5c07a089b2",
+            "containerId": "",
+            "name": "calcularNovoSalario",
+            "url": "http://localhost:8080/api/calcularNovoSalario/00000000000",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-08T18:37:48.175Z",
+            "modified": "2023-06-08T18:43:34.733Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cpf\":\"00000000000\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4c88c1f-b7fa-4501-9b62-f897068df4df",
+            "colId": "13ba9139-3460-4427-897d-8c5c07a089b2",
+            "containerId": "",
+            "name": "calcularImposto",
+            "url": "http://localhost:8080/api/calcularImposto/00000000001",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-06-09T01:00:21.355Z",
+            "modified": "2023-06-09T01:19:07.777Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
